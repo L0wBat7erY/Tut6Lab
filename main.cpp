@@ -15,12 +15,11 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     // insert code here...
     
-    AVL<int>* pAVLtree = new AVL<int>();
-    int a[5] = {50, 35, 90, 30, 40};
     
-    pAVLtree->insertAVLtree(a[0]);
-    pAVLtree->insertAVLtree(a[1]);
-    pAVLtree->insertAVLtree(a[2]);
+    AVL<int>* tree = new AVL<int>;
+    
+    tree->insertAVLtree(50);
+    tree->traverseLNR_AVLtree();
     
     cout<<endl;
     return 0;
